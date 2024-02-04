@@ -24,9 +24,7 @@ fn read_character() {
     
     loop {
         if let Ok(character) = stdout.read_char() {
-            match character {
-                character => println!("{character}"),
-            }
+            println!("{character}");
         }
     }
 
